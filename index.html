@@ -5,21 +5,43 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="SkyJourney - Book your SpiceJet flight from Delhi to Leh with ease">
 <title>Home - SkyJourney Flight Booking</title>
+
+<!-- Preconnect for Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Non-blocking CSS Load -->
+<link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+<noscript>
 <link rel="stylesheet" href="css/style.css">
-<style>body{font-family:Inter,sans-serif}</style>
+</noscript>
+
+<!-- Minimal Critical CSS -->
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0A0E27;
+    color: #F1FAEE;
+}
+</style>
+
 </head>
 <body>
+
 <nav>
 <div class="container">
 <a href="index.html" class="logo">Sky<span>Journey</span></a>
+
 <div class="menu-toggle" onclick="toggleMenu()">
 <span></span>
 <span></span>
 <span></span>
 </div>
+
 <ul id="navMenu">
 <li><a href="index.html">Home</a></li>
 <li><a href="booking.html">Booking</a></li>
@@ -34,6 +56,7 @@
 </ul>
 </div>
 </nav>
+
 <main class="page-content hero">
 <div class="hero-content">
 <h1>Welcome to Your Journey</h1>
@@ -41,8 +64,10 @@
 <a href="booking.html" class="cta-button">View Booking Details</a>
 </div>
 </main>
+
 <footer>
 <div class="footer-content">
+
 <div class="footer-section">
 <h3>SkyJourney</h3>
 <p>Your trusted partner for seamless air travel experiences.</p>
@@ -53,6 +78,7 @@
 <a href="#" aria-label="LinkedIn">l</a>
 </div>
 </div>
+
 <div class="footer-section">
 <h3>Quick Links</h3>
 <ul>
@@ -62,6 +88,7 @@
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </div>
+
 <div class="footer-section">
 <h3>Support</h3>
 <ul>
@@ -71,6 +98,7 @@
 <li><a href="#">Privacy</a></li>
 </ul>
 </div>
+
 <div class="footer-section">
 <h3>Contact</h3>
 <ul>
@@ -80,11 +108,15 @@
 <li>⏰ 24/7 Support</li>
 </ul>
 </div>
+
 </div>
+
 <div class="copyright">
 <p>&copy; 2025 SkyJourney. All rights reserved.</p>
 </div>
 </footer>
+
 <script src="js/script.js" defer></script>
+
 </body>
 </html>
